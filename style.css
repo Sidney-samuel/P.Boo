@@ -1,0 +1,33 @@
+
+body{
+    background-color: rgb(247, 244, 244);
+
+}
+/* background-color: rgb(247, 244, 244); */
+
+section{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247, 244, 244);
+
+}
+
+header{
+    margin-bottom:20px;
+    
+}
+
+
+
+article{
+    background-color: rgb(247, 244, 244);
+    margin-top: 40px;
+}
+
+
+footer{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
