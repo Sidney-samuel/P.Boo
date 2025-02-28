@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous" />
+      <link rel="stylesheet" href="/style.css">
+      <script src="https://kit.fontawesome.com/9ac1792900.js" crossorigin="anonymous"></script>
+
+    <title>Novo projeto</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark">
+     
+      <ul class="nav justify-content-center ">
+        <li class="nav-item">
+          <a class="nav-link active" href="/index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/satisfação.html">SATISFAÇÃO</a>
+        </li>
+        </ul>
+
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="/carrinho.html"> <i class="fa-solid fa-cart-shopping"></i> </a>
+          </li>
+
+    </nav>
+    <header >
+      <div class="jumbotron jumbotron-fluid.">
+        <div class="container">
+          <h1 class="display-4">Petiscos <i class="fa-solid fa-utensils"></i></h1> 
+          <p class="lead">Veja a seguir os nossos Pestiscos : </p>
+        </div>
+      </div>
+ 
+<main>
+<section>   
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+ <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/imagens/chorrus.avif" alt="Prato de churros">
+        <div class="card-body">
+          <h2>Churros dos Sonhos</h2>
+          <p class="card-text">Uma camada de doce de leite, churros, morango picado e sorvete de creme</p>
+          <button class="btn btn-secondary add-to-cart" data-nome="Churros dos sonhos" data-preco="29,90"> R$ 29,90</button>
+        
+        </div>
+      </div>
+
+    </div>
+     <div class="col-sm">
+      
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/imagens/cupim na mostarda.avif" alt="Prato de cupim na mostarda">
+        <div class="card-body">
+         <h2>Cupim na Mostarda </h2>
+          <p class="card-text">Cupim feito com um delicioso molho mostarda, acompanha torradinha.</p>
+          <button class="btn btn-secondary add-to-cart" data-nome="Cupim na Mostarda" data-preco="34.90"> R$ 34,90 </button>
+        
+        
+        </div>
+      </div>
+</div>
+    <div class="col-sm">
+      
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/imagens/panceta.avif" alt="Prato de panceta">
+        <div class="card-body">
+          <h2>Panceta Aperitivo
+        </h2>
+          <p class="card-text">Deliciosa panceta com geleia de goiabada apimentada e cebola roxa.</p>
+          <button class="btn btn-secondary add-to-cart" data-nome="Panceta" data-preco="29,90"> R$ 29,90</button>
+        
+        </div>
+      </div>
+
+    
+    </section>
+<article>
+     
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+      
+       <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="/imagens/linguiça na chapa.avif" alt="Prato de linguiça na chapa">
+              <div class="card-body">
+                <h2>Linguiça na Chapa </h2>
+                <p class="card-text">Linguiça de costela com queijo</p>
+                <p>Linguiça de fraldinha com pimenta biquinho  </p>
+        
+                <button class="btn btn-secondary add-to-cart" data-nome="Linguiça na chapa" data-preco="29.90">  R$ 29.90 </button>
+              
+              </div>
+            </div>
+      
+          </div>
+           <div class="col-sm">
+            
+      
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="/imagens/sandu2.avif" alt=" Cibatta costelinha ">
+              <div class="card-body">
+               <h2>Ciabatta Costelinha </h2>
+                <p class="card-text">Costelinha desfiada flambada na cachaça com cebola caramelizada e cheddar.</p>
+                <button class="btn btn-secondary add-to-cart" data-nome="Cibatta costelinha " data-preco="34.90">  R$ 34.90 </button>
+              </div>
+            </div>
+      </div>
+          <div class="col-sm">
+            
+      
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="/imagens/bollinho de carne.avif" alt="Bolinho de carne">
+              <div class="card-body">
+                <h2>Bolinho de Carne</h2>
+                <p class="card-text">Feito com muita carne e o delicioso tempero do café. Acompanha molho café mostarda.</p>
+                <button class="btn btn-secondary add-to-cart" data-nome="Bolinho de carne" data-preco="19.90"> R$ 19,90 </button>
+              </div>
+            </div>
+    
+        </article>
+
+  <footer>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      
+      <p class="lead">© 2025 por Sidney</p>
+      </div>
+    </div>
+  
+  </footer>
+  
+
+
+
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      let botoes = document.querySelectorAll(".add-to-cart");
+
+      botoes.forEach(botao => {
+          botao.addEventListener("click", function () {
+              let nome = this.getAttribute("data-nome");
+              let preco = parseFloat(this.getAttribute("data-preco"));
+
+              let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+              carrinho.push({ nome, preco });
+
+              localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+              alert(`${nome} foi adicionado ao carrinho!`);
+          });
+      });
+  });
+</script>
+     
+      
+    

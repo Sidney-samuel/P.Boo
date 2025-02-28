@@ -1,0 +1,12 @@
+// Variáveis de Cores e Estilos
+$cor-fundo: rgb(247, 244, 244);
+$cor-texto: #333;
+$cor-primaria: #6c757d; // Cinza do Bootstrap
+$cor-secundaria: #343a40; // Cinza escuro do Bootstrap
+
+// Mixins para reutilização
+@mixin flex-center($justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items;
+  
